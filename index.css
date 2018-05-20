@@ -1,0 +1,23 @@
+body {
+  background: #f8f8f8;
+}
+.drag-sort-list {
+  position: relative;
+}
+.drag-sort-item {
+  padding: 30px;
+  border: 1px solid #999;
+  background: #fff;
+}
+
+.drag-origin {
+  color: #999;
+  background: #999;
+}
+.drag-clone {
+  position: absolute;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 10px #ccc;
+  z-index: 1;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>drag sort list</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="list" class="drag-sort-list">
+    <div class="drag-sort-item" data-key="A">A</div>
+    <div class="drag-sort-item" data-key="B">B</div>
+    <div class="drag-sort-item" data-key="C">C</div>
+    <div class="drag-sort-item" data-key="D">D</div>
+    <div class="drag-sort-item" data-key="E">E</div>
+    <div class="drag-sort-item" data-key="F">F</div>
+  </div>
+  <script src="index.js"></script>
+  <script>
+  new DragSortList({
+    el: document.getElementById('list'),
+    key: 'data-key',
+    onchange(keys) {
+      console.log('list: ' + keys)
+    }
+  })
+  </script>
+</body>
+</html>
